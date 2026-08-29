@@ -38,6 +38,7 @@ button { font: inherit; }
 }
 .site-header.scrolled { border-bottom-color: var(--line); }
 .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.nav-simple { justify-content: flex-end; }
 .brand {
   width: 44px; height: 44px; display: grid; place-items: center;
   border: 1px solid var(--line); border-radius: 13px; font-family: Manrope, sans-serif;
