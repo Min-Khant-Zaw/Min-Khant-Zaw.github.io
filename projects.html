@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected electrical engineering, embedded systems, RF, robotics, and digital design projects by Min Khant Zaw." />
+  <meta property="og:title" content="Projects | Min Khant Zaw" />
+  <meta property="og:description" content="Selected RF, PCB, embedded systems, robotics, analog IC, and computer architecture projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://min-khant-zaw.github.io/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects | Min Khant Zaw" />
+  <meta name="twitter:description" content="Selected RF, PCB, embedded systems, robotics, analog IC, and computer architecture projects." />
+  <meta name="twitter:image" content="https://min-khant-zaw.github.io/og.png" />
+  <title>Projects | Min Khant Zaw</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">MKZ</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container reveal">
+      <p class="eyebrow">SELECTED WORK</p>
+      <h1>Projects</h1>
+      <p>Six projects spanning RF, PCB design, embedded systems, robotics, analog IC design, and computer architecture.</p>
+    </section>
+
+    <section class="section page-section container">
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-visual radar-visual" aria-hidden="true">
+            <div class="radar-ring ring-1"></div><div class="radar-ring ring-2"></div><div class="radar-ring ring-3"></div>
+            <div class="radar-sweep"></div><div class="radar-target target-1"></div><div class="radar-target target-2"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>RF / Research</span><span>2025–Present</span></div>
+            <h3>Search & Rescue Human-Detection Radar</h3>
+            <p>Researching ground-penetrating and ultra-wideband radar approaches for locating people in disaster environments, with an emphasis on PCB-based hardware improvements.</p>
+            <ul>
+              <li>Modeling FMCW radar signal chains and system behavior in LTspice.</li>
+              <li>Evaluating RF architectures, clutter robustness, and practical hardware tradeoffs.</li>
+            </ul>
+            <div class="tags"><span>RF</span><span>FMCW</span><span>LTspice</span><span>PCB</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual heat-visual" aria-hidden="true">
+            <div class="heat-map"></div><div class="device-chip">ESP32-C3</div>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>Embedded / PCB</span><span>2026</span></div>
+            <h3>Wearable Heat Monitor</h3>
+            <p>Built wearable sensing devices that generate a crowdsourced heat map of the MIT campus.</p>
+            <ul>
+              <li>Led hardware development in a 9-person interdisciplinary team.</li>
+              <li>Designed an ESP32-C3 PCB while maintaining a target COGS below $20.</li>
+            </ul>
+            <div class="tags"><span>ESP32</span><span>PCB</span><span>IoT</span><span>FastAPI</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual cpu-visual" aria-hidden="true">
+            <div class="cpu-core">RV32</div><span class="trace t1"></span><span class="trace t2"></span><span class="trace t3"></span><span class="trace t4"></span>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>Digital Design</span><span>2025</span></div>
+            <h3>Pipelined RISC-V Processor</h3>
+            <p>Designed a four-stage RISC-V processor with performance-oriented architectural features.</p>
+            <ul>
+              <li>Implemented instruction/data caches, bypassing, branch speculation, and stalling.</li>
+              <li>Ran an MNIST inference workload on the completed processor.</li>
+            </ul>
+            <div class="tags"><span>RISC-V</span><span>HDL</span><span>Caches</span><span>Architecture</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual robot-visual" aria-hidden="true">
+            <div class="road"></div><div class="lane left"></div><div class="lane right"></div><div class="robot">◆</div>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>Robotics</span><span>2025</span></div>
+            <h3>Autonomous Racecar</h3>
+            <p>Developed autonomy software for lane following and city-driving challenges in MIT Robotics: Science & Systems.</p>
+            <ul>
+              <li>Integrated perception, particle-filter localization, A* planning, and a state machine in ROS 2.</li>
+              <li>Completed a 200 m track lap in 54.7 s without a lane violation.</li>
+            </ul>
+            <div class="tags"><span>ROS 2</span><span>Python</span><span>OpenCV</span><span>A*</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual analog-visual" aria-hidden="true">
+            <svg viewBox="0 0 500 220" role="img" aria-label="Stylized amplifier frequency response">
+              <path d="M20 165 C90 164 120 160 165 152 C220 142 238 115 270 88 C305 58 332 45 382 39 C420 35 451 38 480 44" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+              <path d="M20 181 H480 M40 20 V195" fill="none" stroke="currentColor" stroke-width="2" opacity=".25"/>
+            </svg>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>Analog IC</span><span>2025</span></div>
+            <h3>Two-Stage CMOS Operational Amplifier</h3>
+            <p>Designed and simulated a compensated CMOS op-amp in Cadence for high gain and bandwidth under a tight power budget.</p>
+            <ul>
+              <li>75.5 dB gain, 200 MHz UGB, 61° phase margin.</li>
+              <li>0.4 mW power and 4.7 ns settling time.</li>
+            </ul>
+            <div class="tags"><span>Cadence</span><span>CMOS</span><span>Analog</span><span>IC Design</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual display-visual" aria-hidden="true">
+            <div class="screen"><span>MIPI DSI</span></div><div class="board"><span>ESP32-P4</span></div><div class="cable"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>Embedded Hardware</span><span>2026</span></div>
+            <h3>Custom Display Interface Platform</h3>
+            <p>Developed hardware and embedded software for a custom MIPI-DSI display system and migrated the architecture from a Linux SBC to an MCU-based design.</p>
+            <ul>
+              <li>Reduced boot time from ~30 s to &lt;2 s and current draw from 0.8 A to 14 mA.</li>
+              <li>Cut BOM cost by 88% while simplifying system assembly.</li>
+            </ul>
+            <div class="tags"><span>ESP32-P4</span><span>MIPI DSI</span><span>Altium</span><span>Embedded C</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year"></span> Min Khant Zaw</span>
+    <span>Built with HTML, CSS & JavaScript</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
