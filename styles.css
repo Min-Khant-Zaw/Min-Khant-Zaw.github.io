@@ -182,7 +182,7 @@ h3 { font-size: 1.32rem; letter-spacing: -.025em; margin-bottom: 12px; }
 .contact-links { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:30px; }
 .contact-links a { padding:10px 14px; border:1px solid var(--line); border-radius:12px; }
 .contact-links a:hover { border-color:rgba(93,228,199,.45); }
-.contact-page { min-height:calc(100vh - 182px); display:grid; align-items:center; }
+.contact-page { min-height:calc(100vh - 72px); display:grid; align-items:center; }
 .standalone-contact { width:100%; margin-top:0; }
 .footer { min-height:110px; display:flex; align-items:center; justify-content:space-between; gap:20px; color:var(--muted); font-size:.84rem; }
 
