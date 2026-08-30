@@ -171,6 +171,8 @@ h3 { font-size: 1.32rem; letter-spacing: -.025em; margin-bottom: 12px; }
 .skills { margin-top:38px; border-top:1px solid var(--line); }
 .skills div { padding:19px 0; border-bottom:1px solid var(--line); display:grid; grid-template-columns:120px 1fr; gap:20px; }
 .skills span { color:var(--muted); }
+.skills-section .section-heading { margin-bottom: 18px; }
+.skills-section .skills { margin-top: 0; }
 
 .contact-section { margin-top:70px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:linear-gradient(100deg,rgba(93,228,199,.08),rgba(95,168,255,.06)); }
 .contact-inner { padding-block:95px; text-align:center; }
