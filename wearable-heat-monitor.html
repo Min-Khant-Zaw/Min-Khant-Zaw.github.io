@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wearable Heat Monitor | Min Khant Zaw</title><link rel="stylesheet" href="styles.css?v=31">
+  <title>Wearable Heat Monitor | Min Khant Zaw</title><link rel="stylesheet" href="styles.css?v=37">
 </head>
 <body>
   <header class="site-header"><nav class="nav nav-simple container" aria-label="Primary navigation"><button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">☰</button><div class="nav-links" id="nav-links"><a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="contact.html">Contact</a><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></div></nav></header>
   <main class="project-detail container">
     <a class="back-link" href="projects.html">← Back to Projects</a>
     <header class="project-detail-header"><p class="eyebrow">EMBEDDED SYSTEMS / PCB DESIGN · FEB 2026 – MAY 2026</p><h1>Wearable Heat Monitor</h1><p>A wearable sensing device that contributes measurements to a crowdsourced heat map of the MIT campus.</p><div class="tags"><span>ESP32</span><span>PCB Design</span><span>IoT</span><span>KiCad</span><span>Sensors</span><span>C</span></div></header>
+    <div class="project-hero-gallery">
+      <figure><img src="wearable-device-backpack.png" alt="Wearable Heat Monitor attached to a backpack"></figure>
+      <figure><img src="wearable-heat-map-dashboard.png" alt="Campus heat-map dashboard displaying wearable sensor measurements"></figure>
+    </div>
     <div class="project-detail-grid"><div><section class="project-detail-section"><h2>Overview</h2><p>The system combines environmental sensing, embedded hardware, and a cost-conscious custom PCB to collect heat data across campus.</p></section><section class="project-detail-section"><h2>My role</h2><p>I led hardware development for a nine-person interdisciplinary team and coordinated the device design around the sensing and cost requirements.</p></section></div><div><section class="project-detail-section"><h2>Hardware</h2><ul><li>Designed an ESP32-C3-based PCB.</li><li>Integrated sensors into a wearable enclosure.</li><li>Maintained a target cost of goods below $20.</li></ul></section><section class="project-detail-section"><h2>Outcome</h2><p>A portable platform capable of supporting distributed, crowdsourced heat measurements.</p></section></div></div>
     <section class="project-detail-section project-story">
       <h2>Project Details</h2>
       <p>During Spring 2026, I worked with a team of 9 students to develop a wearable heat monitor for the Engineering for Impact (6.900). The purpose of the system is to understand the local heat experience on various parts of the MIT campus. Users could attach the device to a backpack as it measured ambient temperature and humidity and uploaded the data to a campus heat map while preserving user privacy.</p>
       <p>As a part of this project, I primarily led the electronics hardware and PCB development, including component selection, schematic capture, PCB layout, PCB assembly, and testing. The device consists of two PCBs: a main board and a light-sensor board connected by a JST cable. The main board includes an ESP32-C3 microcontroller, battery management system with rechargeable battery, a temperature and humidity sensor (SHT40), USB-C port, buttons for reset and flash, pins for fan control, and a status LED. The light sensor board contains an ambient-light sensor (VEML7700).</p>
+      <div class="project-story-gallery">
+        <figure><img src="wearable-main-board.png" alt="3D rendering of the Wearable Heat Monitor main PCB"></figure>
+        <figure><img src="wearable-light-sensor-board.png" alt="3D rendering of the Wearable Heat Monitor light-sensor PCB"></figure>
+      </div>
       <p>One of our primary engineering challenges was the slow response time of the temperature and humidity sensor to environmental changes. We placed our device at MIT sailing, pavilion which has a research-grade weather station to compare our data and observed that the sensor has a very slow response time. To address this issue, we decided to place a fan in front of the sensor to increase airflow and improve heat transfer around the sensor. I also removed copper pour around the sensor and added PCB isolation slots to reduce thermal conduction through the board. Because continuous fan operation would consume unnecessary power, we designed the fan to activate only when the user transitioned between indoor and outdoor environments. We used measurements from the ambient-light sensor to detect these transitions and programmed the fan to run only when a rapid sensor response was needed.</p>
-      <p>For this project, we were able to achieve the cost of goods (COGS) below $20, temperature measurement accuracy of ±3°F, a battery life of 61 hours per charge, and dimensions of less than 12 inches along every axis. This was my first experience developing a fully functional PCB and complete system from the ground up. Through the project, I learned how to design, assemble, and test a PCB; validate an integrated system; and communicate effectively across a multidisciplinary team spanning hardware, software, and industrial design.</p>
+      <figure class="project-story-image"><img src="sailing-pavilion-comparison.png?v=3" alt="Wearable Heat Monitor at the MIT Sailing Pavilion beside a chart comparing measured temperature data with ground-truth weather-station data"></figure>
+      <p>For this project, we were able to achieve the cost of goods (COGS) below $20, temperature measurement accuracy of ±3°F, a battery life of 61 hours per charge, and dimensions of less than 12 inches along every axis. This was my first experience developing a fully functional PCB and complete system from the ground up. Through the project, I learned how to design, assemble, and test a PCB; validate an integrated system; and communicate effectively across an interdisciplinary team spanning hardware, software, and industrial design.</p>
     </section>
   </main><script src="script.js"></script>
 </body></html>
