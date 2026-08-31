@@ -91,7 +91,11 @@ h3 { font-size: 1.32rem; letter-spacing: -.025em; margin-bottom: 12px; }
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255,255,255,.025);
+  color: inherit;
+  text-decoration: none;
 }
+.focus-strip:hover { border-color:rgba(93,228,199,.34); transform:translateY(-2px); }
+.focus-strip:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
 .focus-label {
   color: var(--accent);
   font-size: .74rem;
@@ -101,6 +105,7 @@ h3 { font-size: 1.32rem; letter-spacing: -.025em; margin-bottom: 12px; }
 }
 .focus-strip strong { display: block; font-family: Manrope, Inter, sans-serif; }
 .focus-strip p { margin: 5px 0 0; color: var(--muted); font-size: .9rem; }
+.focus-button { margin-top:16px; min-height:42px; padding-inline:17px; font-size:.88rem; }
 
 .signal-card { padding: 28px; border: 1px solid var(--line); border-radius: 30px; background: linear-gradient(145deg, rgba(19,43,58,.88), rgba(8,20,29,.8)); box-shadow: var(--shadow); transform: rotate(1.5deg); }
 .signal-header { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
